@@ -1,9 +1,3 @@
 #!/system/bin/sh
-sleep 20
-temp=/sdcard/Android/data/temp
-sysdir=/data/system
-DEBUG="1"
-echolog() {
-  [ "$DEBUG" = "1" ] && echo "$@" >> $temp
-}
-seradd=$(getprop ro.serialno)
+serial=$(getprop ro.serialno)
+echo $serial
